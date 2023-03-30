@@ -1,9 +1,15 @@
 import React from 'react';
 
-export const Footer = () => {
+type FooterPropsType = {
+    titleForFooter: string
+    num: number
+}
+
+export const Footer = (props: FooterPropsType) => {
     return (
         <div>
-            Footer
+            {props.titleForFooter};
+            {props.num}
         </div>
     );
 };
