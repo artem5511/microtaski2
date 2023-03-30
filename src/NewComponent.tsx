@@ -1,4 +1,5 @@
 import React from 'react';
+import './NewComp.css'
 
 type NewComponentPropsType = {
     // students: Array<StudentType>
@@ -16,18 +17,17 @@ type topCarsPropsType = {
 
 
 export const NewComponent = (props: NewComponentPropsType) => {
-    debugger
     return (
         <div>
-            <table>
-                    <tr>
-                        <th>num p/p</th>
+            <table className={'tblstyle'}>
+                    <tr id={'table_th'}>
+                        <th >num p/p</th>
                         <th>manufacturer</th>
                         <th>model</th>
                     </tr>
                 {props.topCars.map((topCars, index) => {
                     return (
-                    <tr key={index}>
+                    <tr key={index} id={'table_td'}>
                         <td>{index+1}</td>
                         <td>{topCars.manufacturer}</td>
                         <td>{topCars.model}</td>
