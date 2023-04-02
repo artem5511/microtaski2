@@ -39,7 +39,7 @@ function App() {
             {/*<Body titleForBody={'NEW BODY'}/>*/}
             {/*<Footer titleForFooter={'NEW FOOTER'} num={5}/>*/}
             {/*<NewComponent students={students}/>*/}
-            <NewComponent topCars={topCars}/>
+            {/*<NewComponent topCars={topCars}/>*/}
         </div>
     )
 }
