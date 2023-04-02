@@ -1,10 +1,11 @@
 import React from 'react';
 import './App.css';
-import {Header} from './site/Header';
-import {Body} from './site/Body';
-import {Footer} from './site/Footer';
+import {Header} from './components/Header';
+import {Body} from './components/Body';
+import {Footer} from './components/Footer';
 import {NewComponent} from './NewComponent';
-import Button from './site/Button';
+import Button from './components/Button';
+import Hookusestate from './components/Hookusestate';
 
 // const students = [
 //     {id: 1, name: "James", age: 8},
@@ -34,26 +35,27 @@ import Button from './site/Button';
 // ]
 
 function App() {
-    const Button1Foo = (subscriber: string, age: number, address: string) => {
-        console.log(subscriber, age, address)
-    }
-    const Button2Foo = (subscriber: string) => {
-        console.log(subscriber)
-    }
-    const Button3Foo = () => {
-        console.log('Im stupid button')
-    }
+    // const Button1Foo = (subscriber: string, age: number, address: string) => {
+    //     console.log(subscriber, age, address)
+    // }
+    // const Button2Foo = (subscriber: string) => {
+    //     console.log(subscriber)
+    // }
+    // const Button3Foo = () => {
+    //     console.log('Im stupid button')
+    // }
 
     return (
-        <div>
+        <div className="App">
             {/*<Header title={'New body'}/>*/}
             {/*<Body titleForBody={'NEW BODY'}/>*/}
             {/*<Footer titleForFooter={'NEW FOOTER'} num={5}/>*/}
             {/*<NewComponent students={students}/>*/}
             {/*<NewComponent topCars={topCars}/>*/}
-            <Button name={'MyYouTubeChanel-1'} callBack={()=>Button1Foo('Im Vasya', 21, 'Live in Minsk')}/>
-            <Button name={'MyYouTubeChanel-2'} callBack={()=>Button2Foo('Im Ivan')}/>
-            <Button name={'Stupid BUTTON'} callBack={Button3Foo}/>
+            {/*<Button name={'MyYouTubeChanel-1'} callBack={()=>Button1Foo('Im Vasya', 21, 'Live in Minsk')}/>*/}
+            {/*<Button name={'MyYouTubeChanel-2'} callBack={()=>Button2Foo('Im Ivan')}/>*/}
+            {/*<Button name={'Stupid BUTTON'} callBack={Button3Foo}/>*/}
+            <Hookusestate/>
         </div>
     )
 }
