@@ -34,12 +34,16 @@ import Button from './site/Button';
 // ]
 
 function App() {
-    const Button1Foo = () => {
-        console.log('Im Vasya')
+    const Button1Foo = (subscriber: string, age: number, address: string) => {
+        console.log(subscriber, age, address)
     }
-    const Button2Foo = () => {
-        console.log('Im Ivan')
+    const Button2Foo = (subscriber: string) => {
+        console.log(subscriber)
     }
+    const Button3Foo = () => {
+        console.log('Im stupid button')
+    }
+
     return (
         <div>
             {/*<Header title={'New body'}/>*/}
@@ -47,8 +51,9 @@ function App() {
             {/*<Footer titleForFooter={'NEW FOOTER'} num={5}/>*/}
             {/*<NewComponent students={students}/>*/}
             {/*<NewComponent topCars={topCars}/>*/}
-            <Button name={'MyYouTubeChanel-1'} callBack={Button1Foo}/>
-            <Button name={'MyYouTubeChanel-2'} callBack={Button2Foo}/>
+            <Button name={'MyYouTubeChanel-1'} callBack={()=>Button1Foo('Im Vasya', 21, 'Live in Minsk')}/>
+            <Button name={'MyYouTubeChanel-2'} callBack={()=>Button2Foo('Im Ivan')}/>
+            <Button name={'Stupid BUTTON'} callBack={Button3Foo}/>
         </div>
     )
 }
