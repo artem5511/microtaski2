@@ -4,6 +4,7 @@ import {Header} from './site/Header';
 import {Body} from './site/Body';
 import {Footer} from './site/Footer';
 import {NewComponent} from './NewComponent';
+import Button from './site/Button';
 
 const students = [
     {id: 1, name: "James", age: 8},
@@ -40,6 +41,7 @@ function App() {
             {/*<Footer titleForFooter={'NEW FOOTER'} num={5}/>*/}
             {/*<NewComponent students={students}/>*/}
             {/*<NewComponent topCars={topCars}/>*/}
+            <Button/>
         </div>
     )
 }
