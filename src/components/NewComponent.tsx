@@ -1,5 +1,5 @@
 import React from 'react';
-import './NewComp.css'
+import '../NewComp.css'
 
 type NewComponentPropsType = {
     // students: Array<StudentType>
@@ -14,7 +14,6 @@ type topCarsPropsType = {
     manufacturer: string
     model: any
 }
-
 
 export const NewComponent = (props: NewComponentPropsType) => {
     return (
