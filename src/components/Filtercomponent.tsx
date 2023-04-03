@@ -1,5 +1,6 @@
 import React from 'react';
 import {FilterType} from '../App';
+import ButtonforFilter from './ButtonforFilter';
 
 
 type FilterPropsType = {
@@ -28,9 +29,13 @@ const Filtercomponent = (props: FilterPropsType) => {
                 })}
             </ul>
             <div style={{marginLeft: '35px'}}>
-                <button onClick={()=>props.onClickFilterHandler('all')}>all</button>
-                <button onClick={()=>props.onClickFilterHandler('ruble')} name={'ruble'}>rubles</button>
-                <button onClick={()=>props.onClickFilterHandler('dollar')} name={'dollar'}>dollars</button>
+                {/*<button onClick={()=>props.onClickFilterHandler('all')}>all</button>*/}
+                {/*<button onClick={()=>props.onClickFilterHandler('ruble')} name={'ruble'}>rubles</button>*/}
+                {/*<button onClick={()=>props.onClickFilterHandler('dollar')} name={'dollar'}>dollars</button>*/}
+
+                <ButtonforFilter name={'all'} callback={()=> props.onClickFilterHandler('all')}/>
+                <ButtonforFilter name={'ruble'} callback={()=> props.onClickFilterHandler('ruble')}/> <ButtonforFilter name={'dollar'} callback={()=> props.onClickFilterHandler('dollar')}/>
+
             </div>
         </>
     );
