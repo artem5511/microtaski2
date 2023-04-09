@@ -8,10 +8,17 @@ export const Appinput = () => {
         {message: 'message3'},
         ]
     )
+
+    const addMessage = (title: string) => {
+        console.log(title)
+        // const fullmessage = message.push(title)
+        // return fullmessage
+    }
+
     return (
         <div className={'App'}>
             <div>
-                <Fullinput/>
+                <Fullinput addmessage={addMessage} />
             </div>
             {message.map((el, index)=>{
                 return (
