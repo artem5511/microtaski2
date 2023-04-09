@@ -12,12 +12,13 @@ type FullInputPropsType = {
          setTitle(event.currentTarget.value)
      }
      const onClickButtonHandler = () => {
-       props.addmessage(title)
+       props.addmessage(title);
+       setTitle('')
      }
 
     return (
         <div>
-            <input onChange={onChangeInputHandler}/>
+            <input value={title} onChange={onChangeInputHandler}/>
             <button onClick={onClickButtonHandler}>+</button>
         </div>
     );

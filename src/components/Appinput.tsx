@@ -10,9 +10,8 @@ export const Appinput = () => {
     )
 
     const addMessage = (title: string) => {
-        console.log(title)
-        // const fullmessage = message.push(title)
-        // return fullmessage
+      let newMessage = {message: title};
+          setMessage([newMessage,...message])
     }
 
     return (
