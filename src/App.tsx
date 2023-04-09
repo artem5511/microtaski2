@@ -7,6 +7,7 @@ import {NewComponent} from './components/NewComponent';
 import Button from './components/Button';
 import Hookusestate from './components/Hookusestate';
 import Filtercomponent from './components/Filtercomponent';
+import {Appinput} from './components/Appinput';
 
 // const students = [
 //     {id: 1, name: "James", age: 8},
@@ -74,7 +75,8 @@ function App() {
     }
     return (
         <>
-            <Filtercomponent  currentMoney={currentMoney} onClickFilterHandler={onClickFilterHandler}/>
+            <Appinput/>
+            {/*<Filtercomponent  currentMoney={currentMoney} onClickFilterHandler={onClickFilterHandler}/>*/}
             {/*<ul>*/}
             {/*    {currentMoney.map((objFromMoneyArr, index) => {*/}
             {/*        return (*/}
