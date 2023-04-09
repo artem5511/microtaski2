@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Fullinput} from './Fullinput';
 
 export const Appinput = () => {
     let [message, setMessage] = useState([
@@ -10,8 +11,7 @@ export const Appinput = () => {
     return (
         <div className={'App'}>
             <div>
-                <input type="text"/>
-                <button>+</button>
+                <Fullinput/>
             </div>
             {message.map((el, index)=>{
                 return (
